@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Caveat';
+  src: url('../fonts/caveat.ttf');
+}
+
+body {
+  background-image: linear-gradient(to top, rgba(73,68,73,0.6), rgba(73,68,73,0.6)), url("../img/img1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.navbar-brand {
+  font-family: 'Caveat';
+  font-size: 4rem;
+}

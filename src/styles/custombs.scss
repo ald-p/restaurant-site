@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+// Website theme colors
+$primary: #eeefeb;
+$secondary: #857f74;
+$success: #ddeac1;
+$light: #8e9189;
+$dark: #494449; 
+
+// Fonts
+$font-family-base: 'Poppins';
+
+@import "~bootstrap/scss/bootstrap";
