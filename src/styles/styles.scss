@@ -1,1 +1,22 @@
+@font-face {
+  font-family: 'Caveat';
+  src: url("../fonts/caveat.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Medium.ttf") format("truetype");
+}
+
+// Website theme colors
+$primary: #eeefeb;
+$secondary: #857f74;
+$success: #ddeac1;
+$light: #8e9189;
+$dark: #494449; 
+
+// Fonts
+$display-font-family: 'Caveat';
+$font-family-base: 'Poppins';
+
 @import "~bootstrap/scss/bootstrap";
