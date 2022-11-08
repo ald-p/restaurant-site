@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: linear-gradient(to top, rgba(73,68,73,0.6), rgba(73,68,73,0.6)), url("../img/img1.jpg");
+  background-image: linear-gradient(to top, rgba(73,68,73,0.75), rgba(73,68,73,0.75)), url("../img/img1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,4 +14,15 @@ body {
 .navbar-brand {
   font-family: 'Caveat';
   font-size: 4rem;
+}
+
+.home-page-btn {
+  border-width: 2px;
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  border-radius: 10rem;
+}
+
+.home-page-btn:hover {
+  background-color: rgba(221,234,193,0.4);
 }
