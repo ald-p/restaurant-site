@@ -7,26 +7,26 @@ const nav = () => {
 
   navEl.innerHTML = `
     <nav class="navbar navbar-expand-md">
-      <div class="container">
-        <a href="#" class="navbar-brand text-primary">Fast<span class="text-success">Break</span></a>
+      <div class="container nav-load">
+        <a href="#" class="navbar-brand text-primary slide-left">Fast<span class="text-success">Break</span></a>
         <button class="navbar-toggler btn btn-primary bg-primary bg-opacity-50 collapsed me-4 p-1" type="button" data-bs-toggle="collapse" data-bs-target="#pages">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="pages">
           <ul class="navbar-nav ms-auto text-center">
-            <li class="nav-item ms-3">
+            <li class="nav-item ms-3 slide-right-fast">
               <a href="#" 
                  class="btn nav-link text-primary link-success active" 
                  id="home"
                  >HOME</a>
             </li>
-            <li class="nav-item ms-3">
+            <li class="nav-item ms-3 slide-right-med">
               <a href="#" 
                  class="btn nav-link text-primary link-success" 
                  id="menu" 
                  >MENU</a>
             </li>
-            <li class="nav-item ms-3">
+            <li class="nav-item ms-3 slide-right-slow">
               <a href="#"
                  class="btn nav-link text-primary link-success" 
                  id="contact" 
