@@ -1,5 +1,15 @@
-const menu = () => {
+import { addActiveClass, removeActiveClass } from "./nav";
 
+const menu = () => {
+  const contentEl = document.getElementById('content');
+
+  contentEl.innerHTML = `this will be the menu page`
 }
 
-export default menu;
+const loadMenuPage = () => {
+  removeActiveClass();
+  addActiveClass('menu');
+  menu();
+}
+
+export default loadMenuPage;
