@@ -1,8 +1,12 @@
 import { addActiveClass, nav, removeActiveClass } from './nav';
 import footer from './footer';
+import loadMenuPage from './menu';
+import loadContactPage from './contact';
 
 const home = () => {
   const contentEl = document.getElementById('content');
+  const bodyEl = document.querySelector('body');
+  bodyEl.classList.add('home-background');
 
   contentEl.innerHTML = `
     <section class="text-primary h-50 px-lg-5 mx-lg-5 mt-5 pt-5 page-load">
@@ -18,6 +22,8 @@ const home = () => {
       </div>
     </section>  
   `;
+
+  btnListeners(loadMenuPage, loadContactPage);
 }
 
 const loadHomePage = () => {
@@ -32,4 +38,10 @@ const initializeHomePage = () => {
   footer();
 }
 
-export {loadHomePage, initializeHomePage};
+const btnListeners = (menuFunc, contactFunc) => {
+  const homeBtns = document.querySelectorAll('.home-page-btn');
+  homeBtns[0].addEventListener('click', menuFunc, false);
+  homeBtns[1].addEventListener('click', contactFunc, false);
+}
+
+export {loadHomePage, initializeHomePage, btnListeners};

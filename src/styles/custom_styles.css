@@ -48,10 +48,18 @@
   }
 }
 
-body {
-  background-image: linear-gradient(to top, rgba(73,68,73,0.75), rgba(73,68,73,0.75)), url("../img/img1.jpg");
-  background-position: center center;
+.home-background {
+  background-image: linear-gradient(to top, rgba(73,68,73,0.95), rgba(73,68,73,0.5)), url("../img/img1.jpg");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.menu-background {
+  background-image: linear-gradient(to bottom, rgba(73,68,73,0.5), rgba(73,68,73,0.95)), url("../img/img1.jpg");
+  background-position: center;
+  background-repeat: repeat;
   background-size: cover;
   height: 100vh;
 }

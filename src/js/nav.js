@@ -48,4 +48,16 @@ const addActiveClass = (id) => {
   page.classList.add('active');
 }
 
-export {nav, removeActiveClass, addActiveClass};
+const linkEventListeners = () => {
+  // link elements
+  const homeLink = document.getElementById('home');
+  const menuLink = document.getElementById('menu');
+  const contactLink = document.getElementById('contact');
+
+  // event listeners
+  homeLink.addEventListener('click', loadHomePage, false);
+  menuLink.addEventListener('click', loadMenuPage, false);
+  contactLink.addEventListener('click', loadContactPage, false);
+}
+
+export {nav, removeActiveClass, addActiveClass, linkEventListeners};
